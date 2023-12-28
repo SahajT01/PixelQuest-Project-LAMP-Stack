@@ -1,0 +1,244 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #e6e6e6;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0px !important;
+}
+
+.container {
+    flex: 1; /* Ensures content takes up all available space */
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f1ca72;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #004c8c;
+    overflow: hidden;
+    z-index: 1000;
+    gap: 60px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #003366;
+    color: white;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+h1, h2, h3, h4 {
+    color: #444;
+    margin-top: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004c8c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003366;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.imgsize{
+    height: 350px;
+    width: 350px;;
+}
+.booking-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.booking-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #004c8c;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button:hover {
+    background-color: #0056b3;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 200px;
+    width: 250px;
+}
+
+.service-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding-left: 15px;
+}
+
+.cardimg {
+    height: 150px;
+    width: 225px;
+}
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-imgdiv {
+    height: 130px;
+    width: 225px;
+    align-items: center;
+    display: flex;
+}
+
+/* General page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Center the search box and increase its size */
+.search-container {
+    text-align: center; /* Center the search container */
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 50%; /* Increase the width of the search box */
+    max-width: 500px; /* Maximum width can be adjusted as needed */
+    border: 1px solid #ddd;
+    font-size: 1.1em; /* Make the text a bit larger for better readability */
+}
+
+.search-container input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5C6BC0;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #3F51B5;
+}
+
+/* Add spacing between table columns */
+table {
+    width: 100%;
+    border-collapse: separate; /* Change from collapse to separate */
+    border-spacing: 10px; /* Adds space between columns */
+    /* If you want more space between rows as well, you can use '10px 10px' */
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #3F51B5;
+    color: white;
+}
+
+/* Optional: Add padding inside the table container for better spacing from edges */
+.table-container {
+    padding: 0 20px;
+}
+
+
+.recentmost{
+    display: flex;
+    justify-content: space-between;
+}
